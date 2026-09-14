@@ -265,6 +265,36 @@ strong { font-weight: 600; }
   .quote { border-top-color: rgba(244, 238, 227, .18); }
 }
 @media (max-width: 720px) {
+  /* gęstsze, bardziej „książkowe” mobile */
+  .book, .quotes, .gallery, .about, .press { padding-block: 56px; }
+  .moments { padding-block: 56px 40px; }
+  .sec-head { margin-bottom: 26px; }
+  .sec-title { font-size: 2.3rem; }
+  .motto__inner { padding-block: 44px; }
+  .motto__text { font-size: 1.45rem; }
+  .hero__title { font-size: clamp(3.4rem, 17vw, 4.6rem); }
+  .hero__content { bottom: 48px; }
+  .about__text { font-size: 1.1rem; line-height: 1.65; }
+  .about__pull { font-size: 1.6rem; }
+  .book__visual { width: 92%; margin-bottom: 44px; }
+  .book__cover { right: -6%; bottom: -5%; width: 42%; }
+  .book__title { font-size: 2.6rem; }
+  .book__lead { font-size: 1.08rem; }
+  .btn { width: 100%; justify-content: space-between; }
+  .book__actions { flex-direction: column; }
+  .q { padding: 22px 0 24px; gap: 12px; }
+  .q::before { font-size: 3rem; line-height: .3; }
+  .q p { font-size: 1.35rem; }
+  .moments__strip { gap: 18px; padding-inline: var(--gutter); }
+  .moment { width: 66vw; }
+  .moment:nth-child(even) { margin-top: 18px; }
+  .art-grid { gap: 22px 14px; }
+  .art__cap { flex-direction: column; gap: 2px; }
+  .art__num { font-size: .82rem; }
+  .art__title { font-size: 1.05rem; }
+  .press-grid .quote { padding: 22px 0 26px; }
+  .quote__mark { font-size: 3rem; line-height: .3; }
+  .foot__motto { font-size: 2rem; }
   .burger { display: flex; }
   .menu { position: fixed; inset: 0; background: var(--night); color: var(--paper); flex-direction: column; justify-content: center; gap: 30px; transform: translateY(-100%); opacity: 0; transition: transform .45s var(--ease), opacity .3s var(--ease); z-index: -1; }
   .menu.is-open { transform: none; opacity: 1; }
