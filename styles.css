@@ -100,6 +100,8 @@ strong { font-weight: 600; }
 
 /* --- motto: cienka linia z powtarzanym tytułem + cytat jak dedykacja --- */
 .motto { background: var(--paper-3); border-bottom: 1px solid var(--line); }
+.motto__inner { position: relative; }
+.motto__inner::before { content: "❦"; display: block; margin: 0 auto 22px; color: var(--gold); font-size: 1.4rem; }
 .marquee { overflow: hidden; border-bottom: 1px solid var(--line); padding-block: 10px; }
 .marquee__track { display: flex; gap: 28px; width: max-content; animation: marquee 60s linear infinite; font-family: var(--font-caps); font-size: .95rem; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
 .marquee__track .dot { color: var(--gold); }
