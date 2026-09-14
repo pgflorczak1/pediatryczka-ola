@@ -7,7 +7,7 @@ Statyczna strona (HTML + CSS + JS), bez builda i bez zależności.
 - `ksiazka.html` — strona książki (opis, ceny, przyciski do salescrm)
 - `regulamin.html`, `polityka-prywatnosci.html` — podstrony z pełnymi tekstami
 - `styles.css`, `script.js`
-- `assets/` — zdjęcia (`hero.jpg`/`hero.webp` — zdjęcie w sekcji Moja Historia, `ola-obraz.webp` — sekcja Książka)
+- `assets/` — zdjęcia; `assets/obrazy/` — 8 obrazów LOLALI (+ miniatury `-s`) i zdjęcia płócien `plan-*.webp`; `assets/foto/` — zdjęcia z albumu w książce
 
 ## Linki sklepu
 W `index.html` sekcja `#ksiazka`:
@@ -26,4 +26,4 @@ Potem w panelu domeny (tam, gdzie była podpięta do Wix) zmień rekordy DNS na 
 ## Jak wprowadzać zmiany
 1. Załóż repozytorium na GitHubie i wrzuć ten folder (`git init && git add . && git commit -m "start"`).
 2. Podepnij repo pod Cloudflare Pages / Netlify (framework: none, build command: puste, output dir: `/`).
-3. Od tej pory każdy `git push` = automatyczna publikacja. Teksty edytujesz w plikach `.html`, kolory/fonty w `styles.css` (sekcja `:root` na górze).
+3. Od tej pory każdy `git push` = automatyczna publikacja. Teksty edytujesz w plikach `.html`, kolory/fonty w `styles.css` (sekcja `:root` na górze). Cytaty z książki: sekcja `#cytaty` w `index.html`; obrazy: sekcja `#obrazy`; zdjęcia z albumu: sekcja `#chwile`.
