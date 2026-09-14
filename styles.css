@@ -202,6 +202,9 @@ strong { font-weight: 600; }
 .photo--3 img { aspect-ratio: 4 / 5; }
 .photo:hover { transform: rotate(0) scale(1.03); z-index: 5; }
 
+/* zdjęcia wplecione w tekst — tylko na telefonie */
+.photo-inline { display: none; }
+
 /* --- chwile: album --- */
 .moments { padding-block: clamp(80px, 11vw, 150px) clamp(60px, 8vw, 110px); overflow: hidden; }
 .moments__strip { display: flex; gap: 26px; overflow-x: auto; padding: 14px var(--gutter) 30px; scroll-snap-type: x mandatory; scrollbar-width: none; cursor: grab; }
@@ -305,6 +308,12 @@ strong { font-weight: 600; }
   .hero__scroll { display: none; }
   .art-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .about__text p { text-align: left; }
+  .about__photos { display: none; }
+  .photo-inline { display: block; margin: 30px auto 34px; width: 84%; background: var(--paper-3); padding: 10px 10px 14px; border: 1px solid var(--line); box-shadow: var(--shadow); transform: rotate(-1.5deg); }
+  .photo-inline:nth-of-type(2) { transform: rotate(1.5deg); width: 72%; }
+  .photo-inline img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 12%; filter: sepia(.08); }
+  .photo-inline:first-of-type img { background: linear-gradient(170deg, #e9cfc3, #d8c3a6); }
+  .photo-inline--sq img { aspect-ratio: 1; }
   .photo--2 { margin-top: -30px; }
   .photo--3 { margin-top: -20px; }
 }
