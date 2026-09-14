@@ -83,10 +83,10 @@ strong { font-weight: 600; }
 .burger[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
 
 /* --- hero: zdjęcie na całą szerokość, tytuł jak karta tytułowa --- */
-.hero { position: relative; height: clamp(600px, 92vh, 940px); overflow: hidden; background: var(--night); color: var(--paper); }
+.hero { position: relative; height: clamp(600px, 90vh, 900px); overflow: hidden; background: var(--night); color: var(--paper); }
 .hero__media, .hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero__media img { object-fit: cover; object-position: 50% 42%; transform: scale(1.12); will-change: transform; filter: saturate(.92) contrast(1.02); }
-.hero__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30, 27, 26, .5) 0%, rgba(30, 27, 26, 0) 32%), linear-gradient(0deg, rgba(30, 27, 26, .9) 0%, rgba(30, 27, 26, .35) 40%, rgba(30, 27, 26, 0) 65%); }
+.hero__media img { object-fit: cover; object-position: 50% 18%; transform: scale(1.06); will-change: transform; filter: saturate(.92) contrast(1.02); }
+.hero__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30, 27, 26, .55) 0%, rgba(30, 27, 26, 0) 26%), linear-gradient(0deg, rgba(30, 27, 26, .9) 0%, rgba(30, 27, 26, .35) 40%, rgba(30, 27, 26, 0) 65%); }
 .hero__content { position: absolute; left: 0; right: 0; bottom: clamp(56px, 10vh, 120px); text-align: center; padding-inline: var(--gutter); }
 .hero__kicker { margin: 0 0 20px; font-family: var(--font-caps); font-size: 1rem; letter-spacing: .34em; text-transform: uppercase; color: var(--gold); animation: rise 1s var(--ease) .1s both; }
 .hero__kicker::before, .hero__kicker::after { content: " ❦ "; color: var(--gold); }

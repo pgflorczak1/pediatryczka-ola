@@ -45,7 +45,7 @@
         const r = el.parentElement.getBoundingClientRect();
         if (r.bottom < 0 || r.top > vh) return;
         const p = (r.top + r.height / 2 - vh / 2) / vh; // -1..1
-        el.style.transform = `translate3d(0, ${p * -6}%, 0) scale(1.12)`;
+        el.style.transform = `translate3d(0, ${p * -3}%, 0) scale(1.06)`;
       });
       ticking = false;
     };
