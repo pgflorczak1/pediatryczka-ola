@@ -27,3 +27,6 @@ Potem w panelu domeny (tam, gdzie była podpięta do Wix) zmień rekordy DNS na 
 1. Załóż repozytorium na GitHubie i wrzuć ten folder (`git init && git add . && git commit -m "start"`).
 2. Podepnij repo pod Cloudflare Pages / Netlify (framework: none, build command: puste, output dir: `/`).
 3. Od tej pory każdy `git push` = automatyczna publikacja. Teksty edytujesz w plikach `.html`, kolory/fonty w `styles.css` (sekcja `:root` na górze). Cytaty z książki: sekcja `#cytaty` w `index.html`; obrazy: sekcja `#obrazy`; zdjęcia z albumu: sekcja `#chwile`.
+
+## Ocena z lubimyczytac.pl
+Liczby (8,9 / 90 ocen / 18 opinii) są wpisane ręcznie w `index.html` i `ksiazka.html` (blok `class="rating"`). Co jakiś czas zaktualizuj je ze strony https://lubimyczytac.pl/ksiazka/5171590/popatrz-wciaz-zyje

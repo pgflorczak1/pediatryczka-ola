@@ -142,6 +142,16 @@ strong { font-weight: 600; }
 .more { display: inline-block; margin-top: 24px; font-style: italic; color: var(--burgundy); text-decoration: none; border-bottom: 1px solid currentColor; }
 .more:hover { color: var(--ink); }
 
+/* --- ocena z lubimyczytac.pl --- */
+.rating { display: inline-grid; grid-template-columns: auto auto; grid-template-rows: auto auto; column-gap: 18px; row-gap: 2px; align-items: center; margin-top: 26px; padding: 14px 20px; border: 1px solid var(--line-2); background: var(--paper-3); text-decoration: none; color: var(--ink); transition: transform .35s var(--ease), box-shadow .35s var(--ease); }
+.rating:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.rating__score { grid-row: 1 / 3; display: flex; align-items: baseline; gap: 4px; font-family: var(--font-display); }
+.rating__score strong { font-size: 2.6rem; font-weight: 500; line-height: 1; color: var(--burgundy); font-variant-numeric: tabular-nums; }
+.rating__score span { font-family: var(--font-caps); font-size: .95rem; letter-spacing: .1em; color: var(--muted); }
+.rating__stars { display: flex; gap: 2px; color: var(--gold); }
+.rating__meta { font-family: var(--font-caps); font-size: .92rem; letter-spacing: .12em; color: var(--muted); line-height: 1.3; }
+.rating__meta em { font-style: italic; font-family: var(--font-display); font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--burgundy); }
+
 /* --- cytaty: jak strony z motto --- */
 .quotes { background: var(--paper-2); padding-block: clamp(80px, 11vw, 150px); border-block: 1px solid var(--line); }
 .q-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
@@ -284,6 +294,7 @@ strong { font-weight: 600; }
   .book__title { font-size: 2.6rem; }
   .book__lead { font-size: 1.08rem; }
   .btn { width: 100%; justify-content: space-between; }
+  .rating { display: grid; width: 100%; }
   .book__actions { flex-direction: column; }
   .q { padding: 22px 0 24px; gap: 12px; }
   .q::before { font-size: 3rem; line-height: .3; }
